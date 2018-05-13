@@ -1,6 +1,6 @@
 import com.th.doctorlocator.FinderConfiguration;
 import com.th.doctorlocator.config.github.GithubConfig;
-import com.th.doctorlocator.domain.User;
+import com.th.doctorlocator.model.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,6 +37,6 @@ public class FinderConfigurationTest {
 
   @Test
   public void githubConfigRepoContributorsUrl() {
-    assertEquals("", githubConfig.getRepositoryContributors(), "https://api.github.com/repos/microsoft/%s/contributors");
+    assertEquals("", githubConfig.getRepositoryContributorsUrl(), "https://api.github.com/repos/%s/%s/contributors");
   }
 }

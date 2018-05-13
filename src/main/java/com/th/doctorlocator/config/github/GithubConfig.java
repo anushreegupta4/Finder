@@ -11,14 +11,28 @@ public class GithubConfig {
   private String organisationReposUrl;
 
   @Value("${github.repocontributors}")
-  private String repositoryContributors;
+  private String repositoryContributorsUrl;
 
-  public String getRepositoryContributors() {
-    return repositoryContributors;
+  @Value("${github.headerkey}")
+  private String headerkey;
+
+  @Value("${github.headervalue}")
+  private String headervalue;
+
+  public String getRepositoryContributorsUrl() {
+    return repositoryContributorsUrl;
   }
 
   public String getOrganisationReposUrl() {
     return organisationReposUrl;
 
+  }
+
+  public String getHeaderkey() {
+    return headerkey;
+  }
+
+  public String getHeadervalue() {
+    return headervalue;
   }
 }

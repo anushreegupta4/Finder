@@ -1,4 +1,4 @@
-package com.th.doctorlocator.domain;
+package com.th.doctorlocator.model;
 
 import org.springframework.stereotype.Component;
 
