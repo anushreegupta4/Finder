@@ -3,6 +3,7 @@ package com.th.doctorlocator.service;
 import com.th.doctorlocator.model.Collaborator;
 import com.th.doctorlocator.model.Repo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -14,6 +15,7 @@ import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.toList;
 
+@Service
 public class CollaboratorService {
 
   private final OrganisationService organisationService;
